@@ -1,0 +1,44 @@
+#game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+
+    #game__player__one, #game__summary, #game__player__two {
+        width: calc((100vw - 68px) / 3);
+        max-width: calc((480px - 68px) / 3);
+
+        #game__player__one__name, #game__summary__name, #game__player__two__name {
+            font-size: 10px;
+            color: #332933;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        %count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            text-align: center;
+            height: 71px;
+        }
+
+        #game__player__one__count {
+            @extend %count;
+            color: #80ffff;
+            transition: opacity 125ms linear;
+        }
+
+        #game__summary__count {
+            @extend %count;
+            color: #332933;
+            font-size: 16px;
+        }
+
+        #game__player__two__count {
+            @extend %count;
+            color: #ffff80;
+            transition: opacity 125ms linear;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
+    body {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a171a;
+        padding: 32px;
+    }
+}
+
+@import 'field';
+@import 'game';

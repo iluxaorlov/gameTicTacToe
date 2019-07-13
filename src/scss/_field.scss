@@ -1,0 +1,24 @@
+#field {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    background-color: #332933;
+    margin-bottom: 32px;
+
+    .cell {
+        width: calc((100vw - 68px) / 3);
+        max-width: calc((480px - 68px) / 3);
+        height: calc((100vw - 68px) / 3);
+        max-height: calc((480px - 68px) / 3);
+        background-color: #1a171a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cell__image {
+            width: 100%;
+            padding: 32px;
+            transition: opacity 125ms linear;
+        }
+    }
+}

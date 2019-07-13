@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif; }
+  * body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a171a;
+    padding: 32px; }
+
+#field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  background-color: #332933;
+  margin-bottom: 32px; }
+  #field .cell {
+    width: calc((100vw - 68px) / 3);
+    max-width: calc((480px - 68px) / 3);
+    height: calc((100vw - 68px) / 3);
+    max-height: calc((480px - 68px) / 3);
+    background-color: #1a171a;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #field .cell .cell__image {
+      width: 100%;
+      padding: 32px;
+      transition: opacity 125ms linear; }
+
+#game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px; }
+  #game #game__player__one, #game #game__summary, #game #game__player__two {
+    width: calc((100vw - 68px) / 3);
+    max-width: calc((480px - 68px) / 3); }
+    #game #game__player__one #game__player__one__name, #game #game__player__one #game__summary__name, #game #game__player__one #game__player__two__name, #game #game__summary #game__player__one__name, #game #game__summary #game__summary__name, #game #game__summary #game__player__two__name, #game #game__player__two #game__player__one__name, #game #game__player__two #game__summary__name, #game #game__player__two #game__player__two__name {
+      font-size: 10px;
+      color: #332933;
+      text-align: center;
+      text-transform: uppercase; }
+    #game #game__player__one #game__player__one__count, #game #game__player__one #game__summary__count, #game #game__player__one #game__player__two__count, #game #game__summary #game__player__one__count, #game #game__summary #game__summary__count, #game #game__summary #game__player__two__count, #game #game__player__two #game__player__one__count, #game #game__player__two #game__summary__count, #game #game__player__two #game__player__two__count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      text-align: center;
+      height: 71px; }
+    #game #game__player__one #game__player__one__count, #game #game__summary #game__player__one__count, #game #game__player__two #game__player__one__count {
+      color: #80ffff;
+      transition: opacity 125ms linear; }
+    #game #game__player__one #game__summary__count, #game #game__summary #game__summary__count, #game #game__player__two #game__summary__count {
+      color: #332933;
+      font-size: 16px; }
+    #game #game__player__one #game__player__two__count, #game #game__summary #game__player__two__count, #game #game__player__two #game__player__two__count {
+      color: #ffff80;
+      transition: opacity 125ms linear; }
+
